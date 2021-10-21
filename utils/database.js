@@ -14,13 +14,11 @@ const sequelize= new Sequelize('BluesDB','user2','root',{
     }
 })
 
-
 //Cargar todos los modelos
 const modelDefiners = [
     //importar cada modelo dentro de la carpeta models
-    require('../models/videojuegos'),
-    require('../models/consolas'),
-    require('../models/consolaVideojuego')
+    require('../models/cartas'),
+    
 
 ]
 
