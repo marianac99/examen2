@@ -34,7 +34,7 @@ exports.postAgregarCarta = (req, res)=>{
     console.log(req.body)
     
     
-    if (esPaloValido(req.body.palo) && esColorValido(req.body.color) && esNumeroValido(req.body.numero) && !esRepetido (req.body.numero,req.body.color,req.body.palo) , 1)
+    if (esPaloValido(req.body.palo) && esColorValido(req.body.color) && esNumeroValido(req.body.numero) && esRepetido (req.body.numero,req.body.color,req.body.palo) < 1)
         Carta.create(req.body)
         .then(result=>{
          console.log("Carta agregada exitosamente")
