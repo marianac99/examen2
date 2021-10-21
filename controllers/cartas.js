@@ -1,5 +1,5 @@
 const path = require('path')
-const Carta = require('../utils/database').models.cards
+const Carta = require('../utils/database').models.cartas
 
 
 exports.postAgregarCarta = (req, res)=>{
@@ -21,7 +21,6 @@ exports.postAgregarCarta = (req, res)=>{
     
     
 }
-
 
 exports.getObtenerCarta = (req, res)=>{
     Carta.findAll()

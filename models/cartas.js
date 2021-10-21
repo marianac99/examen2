@@ -22,4 +22,4 @@ const Carta = (sequelize)=>{
     })
 }
 
-module.exports = Videojuego
+module.exports = Carta

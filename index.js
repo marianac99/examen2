@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 
-app.use( "/cards",vjRoutes);
+app.use( "/cartas",vjRoutes);
 
 
 app.get("/prueba", (req, res) =>{
